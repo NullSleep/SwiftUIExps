@@ -19,13 +19,23 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Munich, Bavaria")
-                .font(.title)
                 .padding()
-                .foregroundColor(.black)
-            Text("Geil dinge").foregroundColor(.green)
+            VStack(alignment: .leading) {
+                Text("München")
+                    .font(.title)
+                    .foregroundColor(.black)
+                HStack {
+                    Text("Bavaria").font(.subheadline)
+                    Spacer()
+                    Text("Deutschland").font(.subheadline)
+                }
+            }
+            .padding()
+            Text("Geil dinge")
+                .foregroundColor(.green)
+                .padding()
         }
-        .padding()
+        
     }
 }
 
