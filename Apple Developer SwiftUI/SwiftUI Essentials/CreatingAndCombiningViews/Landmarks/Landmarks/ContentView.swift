@@ -16,14 +16,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-                .padding()
-            
             // GUIDE: When you specify only the height parameter, the view automatically sizes to the width of its content. In this case, MapView expands to fill the available space.
             MapView().frame(height: 300)
             
+          // GUIDE: The offset and padding make room for the text by moving the image upwards.
             CircleImage()
                 .offset(y: -130)
                 .padding(.bottom, -130)
@@ -43,6 +39,11 @@ struct ContentView: View {
             Text("Geil dinge")
                 .foregroundColor(.green)
                 .padding()
+          
+          Image(systemName: "globe")
+              .imageScale(.large)
+              .foregroundColor(.accentColor)
+              .padding()
             
             // Guide: spacer at the bottom of the outer VStack to push the content to the top of the screen.
             Spacer()
