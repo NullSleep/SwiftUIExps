@@ -30,12 +30,14 @@ struct ContentView: View {
           VStack(alignment: .leading) {
             Text("München")
               .font(.title)
-              .foregroundColor(.black)
+              
             HStack {
               Text("Bavaria").font(.subheadline)
               Spacer()
               Text("Deutschland").font(.subheadline)
             }
+            .font(.subheadline)
+            .foregroundColor(.secondary)
             
             Divider()
             
