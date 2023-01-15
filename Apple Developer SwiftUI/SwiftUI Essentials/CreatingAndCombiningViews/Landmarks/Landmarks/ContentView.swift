@@ -16,37 +16,46 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            // GUIDE: When you specify only the height parameter, the view automatically sizes to the width of its content. In this case, MapView expands to fill the available space.
-            MapView().frame(height: 300)
-            
+          // GUIDE: When you specify only the height parameter, the view automatically sizes to the width of its content. In this case, MapView expands to fill the available space.
+          // GUIDE: To allow the map content to extend to the top edge of the screen, add the ignoresSafeArea(edges: .top) modifier to the map view.
+          MapView()
+            .ignoresSafeArea(edges: .top)
+            .frame(height: 300)
+          
           // GUIDE: The offset and padding make room for the text by moving the image upwards.
-            CircleImage()
-                .offset(y: -130)
-                .padding(.bottom, -130)
-            
-            VStack(alignment: .leading) {
-                Text("München")
-                    .font(.title)
-                    .foregroundColor(.black)
-                HStack {
-                    Text("Bavaria").font(.subheadline)
-                    Spacer()
-                    Text("Deutschland").font(.subheadline)
-                }
+          CircleImage()
+            .offset(y: -130)
+            .padding(.bottom, -130)
+          
+          VStack(alignment: .leading) {
+            Text("München")
+              .font(.title)
+              .foregroundColor(.black)
+            HStack {
+              Text("Bavaria").font(.subheadline)
+              Spacer()
+              Text("Deutschland").font(.subheadline)
             }
-            .padding()
             
-            Text("Geil dinge")
-                .foregroundColor(.green)
-                .padding()
+            Divider()
+            
+            Text("Text about München")
+              .font(.title2)
+            Text("Descriptive text comes here.")
+          }
+          .padding()
+          
+          Text("Geil dinge")
+            .foregroundColor(.green)
+            .padding()
           
           Image(systemName: "globe")
-              .imageScale(.large)
-              .foregroundColor(.accentColor)
-              .padding()
-            
-            // Guide: spacer at the bottom of the outer VStack to push the content to the top of the screen.
-            Spacer()
+            .imageScale(.large)
+            .foregroundColor(.accentColor)
+            .padding()
+          
+          // Guide: spacer at the bottom of the outer VStack to push the content to the top of the screen.
+          Spacer()
         }
     }
 }
