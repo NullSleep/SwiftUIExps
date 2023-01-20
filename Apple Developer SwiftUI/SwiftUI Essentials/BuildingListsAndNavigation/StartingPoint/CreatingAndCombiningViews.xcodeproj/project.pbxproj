@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23390298297B129800EB939A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23390297297B129800EB939A /* ModelData.swift */; };
 		2378B4C72974D96F007AB6C1 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2378B4C62974D96F007AB6C1 /* landmarkData.json */; };
 		2378B4C92974DA58007AB6C1 /* Wahrzeichen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2378B4C82974DA58007AB6C1 /* Wahrzeichen.swift */; };
 		C20D77EE24B665D7002E7AEA /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D77ED24B665D7002E7AEA /* LandmarksApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23390297297B129800EB939A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		2378B4C62974D96F007AB6C1 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../../Resources/landmarkData.json; sourceTree = "<group>"; };
 		2378B4C82974DA58007AB6C1 /* Wahrzeichen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wahrzeichen.swift; sourceTree = "<group>"; };
 		C20D77EA24B665D7002E7AEA /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				C20D77FC24B668F4002E7AEA /* CircleImage.swift */,
 				C20D77FE24B67FB3002E7AEA /* MapView.swift */,
 				2378B4C82974DA58007AB6C1 /* Wahrzeichen.swift */,
+				23390297297B129800EB939A /* ModelData.swift */,
 				2378B4C52974D961007AB6C1 /* Ressourcen */,
 				C20D77F124B665D8002E7AEA /* Assets.xcassets */,
 				C20D77F624B665D8002E7AEA /* Info.plist */,
@@ -187,6 +190,7 @@
 				C20D77FF24B67FB3002E7AEA /* MapView.swift in Sources */,
 				C20D77EE24B665D7002E7AEA /* LandmarksApp.swift in Sources */,
 				C20D77FD24B668F4002E7AEA /* CircleImage.swift in Sources */,
+				23390298297B129800EB939A /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

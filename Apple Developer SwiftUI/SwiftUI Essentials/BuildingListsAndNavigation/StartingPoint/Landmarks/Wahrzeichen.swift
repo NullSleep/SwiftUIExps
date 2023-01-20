@@ -21,17 +21,20 @@ struct Wahrzeichen: Hashable, Codable {
   var state: String
   var description: String
   
-  private var bildName: String
+  // ICH: It must match the data source (json.file) properties
+  private var imageName: String
   
   var bild: Image {
-    Image(bildName)
+    Image(imageName)
   }
   
-  private var koordinaten: Koordinaten
+  
+  // ICH: Like imageName this is also a property that has to be mapped like the data source
+  private var coordinates: Koordinaten
   
   // LEITFADEN: Compute a locationCoordinate property that’s useful for interacting with the MapKit framework.
   var ortsKoordinate: CLLocationCoordinate2D {
-    CLLocationCoordinate2D(latitude: koordinaten.breitengrad, longitude: koordinaten.länge)
+    CLLocationCoordinate2D(latitude: coordinates.breitengrad, longitude: coordinates.länge)
   }
   
   
