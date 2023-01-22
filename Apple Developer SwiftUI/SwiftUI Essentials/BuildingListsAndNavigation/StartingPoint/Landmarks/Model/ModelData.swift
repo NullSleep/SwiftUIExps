@@ -23,7 +23,7 @@ func load<T: Decodable>(_ filename: String) -> T {
   do {
     data = try Data(contentsOf: file)
   } catch {
-    fatalError("Couldn't load \(filename) frin the main bundle:\n\(error)")
+    fatalError("Couldn't load \(filename) from the main bundle:\n\(error)")
   }
   
   do {
