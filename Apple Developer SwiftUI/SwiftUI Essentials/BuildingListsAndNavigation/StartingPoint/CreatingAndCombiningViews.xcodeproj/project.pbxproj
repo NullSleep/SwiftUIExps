@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		23390298297B129800EB939A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23390297297B129800EB939A /* ModelData.swift */; };
 		2378B4C72974D96F007AB6C1 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2378B4C62974D96F007AB6C1 /* landmarkData.json */; };
-		2378B4C92974DA58007AB6C1 /* Wahrzeichen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2378B4C82974DA58007AB6C1 /* Wahrzeichen.swift */; };
+		2378B4C92974DA58007AB6C1 /* Sehenswürdigkeit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2378B4C82974DA58007AB6C1 /* Sehenswürdigkeit.swift */; };
+		238099F0297CC2230061FC5E /* SehenswürdigkeitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238099EF297CC2230061FC5E /* SehenswürdigkeitRow.swift */; };
 		C20D77EE24B665D7002E7AEA /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D77ED24B665D7002E7AEA /* LandmarksApp.swift */; };
 		C20D77F024B665D7002E7AEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D77EF24B665D7002E7AEA /* ContentView.swift */; };
 		C20D77F224B665D8002E7AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20D77F124B665D8002E7AEA /* Assets.xcassets */; };
@@ -21,7 +22,8 @@
 /* Begin PBXFileReference section */
 		23390297297B129800EB939A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		2378B4C62974D96F007AB6C1 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../../Resources/landmarkData.json; sourceTree = "<group>"; };
-		2378B4C82974DA58007AB6C1 /* Wahrzeichen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wahrzeichen.swift; sourceTree = "<group>"; };
+		2378B4C82974DA58007AB6C1 /* Sehenswürdigkeit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sehenswürdigkeit.swift"; sourceTree = "<group>"; };
+		238099EF297CC2230061FC5E /* SehenswürdigkeitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SehenswürdigkeitRow.swift"; sourceTree = "<group>"; };
 		C20D77EA24B665D7002E7AEA /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20D77ED24B665D7002E7AEA /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		C20D77EF24B665D7002E7AEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				C20D77EF24B665D7002E7AEA /* ContentView.swift */,
 				C20D77FC24B668F4002E7AEA /* CircleImage.swift */,
 				C20D77FE24B67FB3002E7AEA /* MapView.swift */,
+				238099EF297CC2230061FC5E /* SehenswürdigkeitRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -67,7 +70,7 @@
 		2339029A297B178100EB939A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2378B4C82974DA58007AB6C1 /* Wahrzeichen.swift */,
+				2378B4C82974DA58007AB6C1 /* Sehenswürdigkeit.swift */,
 				23390297297B129800EB939A /* ModelData.swift */,
 			);
 			path = Model;
@@ -202,9 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C20D77F024B665D7002E7AEA /* ContentView.swift in Sources */,
-				2378B4C92974DA58007AB6C1 /* Wahrzeichen.swift in Sources */,
+				2378B4C92974DA58007AB6C1 /* Sehenswürdigkeit.swift in Sources */,
 				C20D77FF24B67FB3002E7AEA /* MapView.swift in Sources */,
 				C20D77EE24B665D7002E7AEA /* LandmarksApp.swift in Sources */,
+				238099F0297CC2230061FC5E /* SehenswürdigkeitRow.swift in Sources */,
 				C20D77FD24B668F4002E7AEA /* CircleImage.swift in Sources */,
 				23390298297B129800EB939A /* ModelData.swift in Sources */,
 			);

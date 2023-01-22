@@ -14,7 +14,7 @@ import CoreLocation
 // LEITFADEN: Adding Codable conformance makes it easier to move data between the structure and a data file. You’ll rely on the Decodable component of the Codable protocol later in this section to read data from file.
 
 // Wahrzeichen = Punto destacado = Landmark 
-struct Wahrzeichen: Hashable, Codable {
+struct Sehenswürdigkeit: Hashable, Codable {
   var id: Int
   var name: String
   var park: String
@@ -28,7 +28,6 @@ struct Wahrzeichen: Hashable, Codable {
     Image(imageName)
   }
   
-  
   // ICH: Like imageName this is also a property that has to be mapped like the data source
   private var coordinates: Koordinaten
   
@@ -36,7 +35,6 @@ struct Wahrzeichen: Hashable, Codable {
   var ortsKoordinate: CLLocationCoordinate2D {
     CLLocationCoordinate2D(latitude: coordinates.breitengrad, longitude: coordinates.länge)
   }
-  
   
   struct Koordinaten: Hashable, Codable {
     var breitengrad: Double
