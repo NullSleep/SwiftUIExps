@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23390298297B129800EB939A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23390297297B129800EB939A /* ModelData.swift */; };
+		2340DD562980AA5D0033DA53 /* SehenwürdigkeitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340DD552980AA5D0033DA53 /* SehenwürdigkeitList.swift */; };
 		2378B4C72974D96F007AB6C1 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2378B4C62974D96F007AB6C1 /* landmarkData.json */; };
 		2378B4C92974DA58007AB6C1 /* Sehenswürdigkeit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2378B4C82974DA58007AB6C1 /* Sehenswürdigkeit.swift */; };
 		238099F0297CC2230061FC5E /* SehenswürdigkeitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238099EF297CC2230061FC5E /* SehenswürdigkeitRow.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		23390297297B129800EB939A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		2340DD552980AA5D0033DA53 /* SehenwürdigkeitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SehenwürdigkeitList.swift"; sourceTree = "<group>"; };
 		2378B4C62974D96F007AB6C1 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../../Resources/landmarkData.json; sourceTree = "<group>"; };
 		2378B4C82974DA58007AB6C1 /* Sehenswürdigkeit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sehenswürdigkeit.swift"; sourceTree = "<group>"; };
 		238099EF297CC2230061FC5E /* SehenswürdigkeitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SehenswürdigkeitRow.swift"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C20D77FC24B668F4002E7AEA /* CircleImage.swift */,
 				C20D77FE24B67FB3002E7AEA /* MapView.swift */,
 				238099EF297CC2230061FC5E /* SehenswürdigkeitRow.swift */,
+				2340DD552980AA5D0033DA53 /* SehenwürdigkeitList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				238099F0297CC2230061FC5E /* SehenswürdigkeitRow.swift in Sources */,
 				C20D77FD24B668F4002E7AEA /* CircleImage.swift in Sources */,
 				23390298297B129800EB939A /* ModelData.swift in Sources */,
+				2340DD562980AA5D0033DA53 /* SehenwürdigkeitList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
