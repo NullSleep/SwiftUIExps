@@ -9,37 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            MapView()
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
-
-            CircleImage()
-                .offset(y: -130)
-                .padding(.bottom, -130)
-
-            VStack(alignment: .leading) {
-                Text("München")
-                    .font(.title)
-
-                HStack {
-                    Text("Bavaria")
-                    Spacer()
-                    Text("Deutschland")
-                }
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-
-                Divider()
-
-                Text("About München")
-                    .font(.title2)
-                Text("Descriptive text goes here.")
-            }
-            .padding()
-
-            Spacer()
-        }
+      // LEITFADEN: You add navigation capabilities to a list by embedding it in a NavigationView, and then nesting each row in a NavigationLink to set up a transtition to a destination view.
+      SehenswürdigkeitList()
     }
 }
 
