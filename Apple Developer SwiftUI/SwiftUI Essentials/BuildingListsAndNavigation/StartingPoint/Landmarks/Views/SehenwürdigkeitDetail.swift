@@ -9,43 +9,45 @@
 import SwiftUI
 
 struct SehenwürdigkeitDetail: View {
+    var sehenswürdigkeit: Sehenswürdigkeit
+    
     var body: some View {
-      VStack {
-          MapView()
+      ScrollView {
+          MapView(coordinate: sehenswürdigkeit.ortsKoordinate)
               .ignoresSafeArea(edges: .top)
               .frame(height: 300)
 
-          CircleImage()
+          CircleImage(image: sehenswürdigkeit.bild)
               .offset(y: -130)
               .padding(.bottom, -130)
 
           VStack(alignment: .leading) {
-              Text("München")
+              Text(sehenswürdigkeit.name)
                   .font(.title)
 
               HStack {
-                  Text("Bavaria")
+                  Text(sehenswürdigkeit.park)
                   Spacer()
-                  Text("Deutschland")
+                  Text(sehenswürdigkeit.state)
               }
               .font(.subheadline)
               .foregroundColor(.secondary)
 
               Divider()
 
-              Text("About München")
+              Text("About \(sehenswürdigkeit.name)")
                   .font(.title2)
-              Text("Descriptive text goes here.")
+              Text(sehenswürdigkeit.description)
           }
           .padding()
-
-          Spacer()
       }
+      .navigationTitle(sehenswürdigkeit.name)
+      .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct SehenwürdigkeitDetail_Previews: PreviewProvider {
     static var previews: some View {
-      SehenwürdigkeitDetail()
+      SehenwürdigkeitDetail(sehenswürdigkeit: sehenswürdigkeiten[0])
     }
 }

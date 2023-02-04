@@ -24,7 +24,7 @@ struct SehenswürdigkeitList: View {
       NavigationView {
         List(sehenswürdigkeiten) { sehenswürdigkeit in
           NavigationLink {
-            SehenwürdigkeitDetail()
+            SehenwürdigkeitDetail(sehenswürdigkeit: sehenswürdigkeit)
           } label: {
             SehenswürdigkeitRow(sehenswürdigkeit: sehenswürdigkeit)
           }
