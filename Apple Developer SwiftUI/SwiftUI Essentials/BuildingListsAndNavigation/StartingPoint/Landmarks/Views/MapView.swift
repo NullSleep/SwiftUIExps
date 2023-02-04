@@ -10,7 +10,6 @@ import MapKit
 
 struct MapView: View {
     var coordinate: CLLocationCoordinate2D
-    var kdelta = 0.2
     
 //    @State private var region = MKCoordinateRegion(
 //        center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
@@ -28,8 +27,12 @@ struct MapView: View {
     // LEITFADEN: Method that updates the region based on a coordinate value.
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
-            center: coordinate,
-            span: MKCoordinateSpan(latitudeDelta: kdelta, longitudeDelta: kdelta)
+            #warning("Here is the source of the crash")
+            #error("Coordinate set in body is causing the crash")
+//            center: coordinate,
+            // TEMP FIX WHILE THE COMMENTED LINE ABOVE GETS FIXED
+            center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
+            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
         )
     }
 }

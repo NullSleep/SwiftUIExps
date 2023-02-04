@@ -28,7 +28,7 @@ struct Sehenswürdigkeit: Hashable, Codable, Identifiable {
     Image(imageName)
   }
   
-  // ICH: Like imageName this is also a property that has to be mapped like the data source
+  // ICH: Like imageName this is also a property that has to be mapped (named) like the data source
   private var coordinates: Koordinaten
   
   struct Koordinaten: Hashable, Codable {
