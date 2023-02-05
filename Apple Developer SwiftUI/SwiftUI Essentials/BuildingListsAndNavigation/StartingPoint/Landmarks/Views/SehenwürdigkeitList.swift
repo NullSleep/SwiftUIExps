@@ -36,6 +36,10 @@ struct SehenswürdigkeitList: View {
 
 struct SehenswürdigkeitList_Previews: PreviewProvider {
     static var previews: some View {
+//        SehenswürdigkeitList()
+        
+        // LEITFADEN: Preview provider to render previews of the list view at different device sizes. By default, previews render at the size of the device in the active scheme. 
         SehenswürdigkeitList()
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
     }
 }
