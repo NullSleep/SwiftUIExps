@@ -38,8 +38,16 @@ struct SehenswürdigkeitList_Previews: PreviewProvider {
     static var previews: some View {
 //        SehenswürdigkeitList()
         
-        // LEITFADEN: Preview provider to render previews of the list view at different device sizes. By default, previews render at the size of the device in the active scheme. 
-        SehenswürdigkeitList()
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+        // LEITFADEN: Preview provider to render previews of the list view at different device sizes. By default, previews render at the size of the device in the active scheme.
+//        SehenswürdigkeitList()
+//            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+        
+        // LEITFADEN: ForEach operates on collections the same way as the list, which means you can use it anywhere you can use a child view, such as in stacks, lists, groups, and more. When the elements of your data are simple value types — like the strings you’re using here — you can use \.self as key path to the identifier.
+        ForEach(["iPhone SE (3rd generation)", "iPhone 14 Pro Max"], id: \.self) { deviceName in
+            SehenswürdigkeitList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+            
+        }
     }
 }
