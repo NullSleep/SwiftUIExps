@@ -14,6 +14,8 @@ struct ContentView: View {
     }
 }
 
+// LEITFADEN: This is used as the setup for the live preview. That's it.
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

@@ -38,6 +38,6 @@ struct Sehenswürdigkeit: Hashable, Codable, Identifiable {
   
   // LEITFADEN: Compute a locationCoordinate property that’s useful for interacting with the MapKit framework.
   var ortsKoordinate: CLLocationCoordinate2D {
-    CLLocationCoordinate2D(latitude: coordinates.longitude, longitude: coordinates.latitude)
+    CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
   }
 }
