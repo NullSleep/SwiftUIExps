@@ -18,6 +18,13 @@ struct LandmarkRow: View {
             Text(landmark.name)
 
             Spacer()
+            
+            // LEITFADEN: In SwiftUI blocks, you use if statements to conditionally include views.
+            // LEITFADEN: Because system images are vector based, you can change their color with the foregroundColor(_:) modifier.
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
