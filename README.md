@@ -1,5 +1,5 @@
-# Swift UI Exps
-Collection of Swift UI experiments.
+# SwiftUI Exps
+Collection of SwiftUI experiments, turotials, courses and general knowledge.
 
 ## Overview
 New system to build UI for apps across all Apple platforms using Swift.
