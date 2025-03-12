@@ -1,4 +1,4 @@
-# SwiftUI Exps
+# SwiftUI
 Collection of SwiftUI experiments, turotials, courses and general knowledge.
 
 ## Overview
