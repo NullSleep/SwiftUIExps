@@ -53,3 +53,8 @@ Previews. You can now create one or many previews of any SwiftUI views to get sa
 SwiftUI is designed to work alongside UIKit and AppKit, so you can adopt it incrementally in your existing apps. When it’s time to construct a new part of your user interface or rebuild an existing one, you can use SwiftUI while keeping the rest of your codebase.
 
 And if you want to use an interface element that isn’t offered in SwiftUI, you can mix and match SwiftUI with UIKit and AppKit to take advantage of the best of all worlds.
+
+--
+
+
+all new apole apps are built with SwiftUI 
