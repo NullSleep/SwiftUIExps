@@ -20,7 +20,7 @@ struct ContentView: View {
                 .frame(width: 260, height: 60)
                 .blur(radius: 9)
                 .onAppear() {
-                    withAnimation(Animation.linear(duration: 4).repeatForever(autoreverses: false)) {
+                    withAnimation(Animation.linear(duration: 5).repeatForever(autoreverses: false)) {
                         self.isAnimating.toggle() // Same as isAnimating = true
                     }
                 }
@@ -39,9 +39,7 @@ struct ContentView: View {
                         RoundedRectangle(cornerRadius: 20, style: .continuous)
                             .stroke(.gray.opacity(0.5), lineWidth: 1)
                     }
-                                
             }
-            
         }
     }
 }
